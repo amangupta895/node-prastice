@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Form</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/Assest/css/login.css"/>
+</head>
+<body>
+
+  <!-- Header and Banner -->
+  <%- include('./common/header.ejs') %>
+  <%- include('./common/Banner.ejs') %>
+
+  <!-- Login Section -->
+  <div class="container">
+    <div class="row justify-content-center align-items-center min-vh-100">
+      <div class="col-md-6 col-lg-5">
+        <div class="login-card text-center">
+          <h3 class="mb-4">Welcome To Login Page</h3>
+          <form action="/login" method="post">
+            <div class="mb-3 text-start">
+              <label class="form-label">Email address</label>
+              <input type="email" class="form-control" name="email" placeholder="Enter your email" required />
+            </div>
+            <div class="mb-3 text-start">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control" name="password" placeholder="••••••••" required />
+            </div>
+            <div class="mb-3 text-end">
+              <a href="/forgot-password" class="text-decoration-none">Forgot Password?</a>
+            </div>
+            <div class="d-grid mb-3">
+              <button type="submit" class="btn btn-primary">Sign In</button>
+            </div>
+            <div class="text-muted">
+              <small>Don't have an account? <a href="/register">Register</a></small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%-include('./common/footer.ejs');%>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

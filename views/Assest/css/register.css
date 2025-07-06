@@ -1,0 +1,32 @@
+body {
+  background: url('../image/manmohan-pandey-x41SXeeQUUg-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #6610f2;
+}
+
+.btn-primary {
+  background-color: #6610f2;
+  border-color: #6610f2;
+}
+
+.btn-primary:hover {
+  background-color: #5b0eb8;
+  border-color: #5b0eb8;
+}

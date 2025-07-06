@@ -1,0 +1,50 @@
+
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .product-card {
+      border: none;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-image {
+      height: 220px;
+      object-fit: cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .product-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .product-category {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+
+    .product-price {
+      font-weight: 700;
+      color: #28a745;
+      font-size: 1.1rem;
+    }
+
+    .btn-modern {
+      border-radius: 30px;
+      padding: 8px 20px;
+      font-weight: 500;
+    }
+
+
+    
+  
